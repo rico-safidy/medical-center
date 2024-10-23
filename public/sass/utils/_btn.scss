@@ -1,0 +1,27 @@
+.btn {
+    font-size: 1rem;
+    font-family: 'montserrat';
+    color: #024058;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+}
+.btn-primary {
+    padding: 1rem 2rem; 
+    background: $primary;
+    color: white;
+    transition: .3s;
+}
+.btn-secondary {
+    padding: 1rem 2rem;
+    background: $secondary;
+    color: white;
+    transition: .3s;
+}
+.btn-tertiary {
+    padding: 1rem 2rem;
+    background: $tertiary;
+    color: $primary;
+    transition: .3s;
+}

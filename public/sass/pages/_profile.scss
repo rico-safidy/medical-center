@@ -1,0 +1,20 @@
+.profile {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+        width: 20vw;
+        aspect-ratio: 2/2;
+        border-radius: 50%;
+        
+    }
+    &-desc {
+        background: $tertiary;
+        padding: 2rem;
+    }
+    &-para {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,90 @@
+.nav {
+    background: $tertiary;
+    z-index: 1;
+
+    &-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $primary;
+
+        &-link {
+            color: $tertiary;
+            padding: 1rem;
+            transition: .3s;
+        }
+    }
+    &-navbar {
+        background: $tertiary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4rem;
+        box-shadow: 0px -4px 13px 0px #3f3f3f;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            &-img {
+                width: 3rem;
+                aspect-ratio: 2 / 2;
+                border-radius: 50%;
+            }
+        }
+        &-logo {
+            color: $primary;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            &-icon {
+                font-size: 3rem;
+                color: #9e0f0f;
+            }
+            &-title {
+                font-size: 1.3rem;
+            }
+        }
+        &-link {
+            padding: 1rem;
+            color: $primary;
+            transition: .3s;
+        }
+        &-icon {
+            font-size: 1.5rem;
+            color: $primary;
+            cursor: pointer;
+            padding: .5rem 1rem;
+            transform: scale(1);
+            display: none;
+            transition: .3s;
+        }
+        &-icon:hover {
+            transform: scale(1.3);
+        }
+        .hide {
+            color: $tertiary;
+            right: 1rem;
+            bottom: .5rem;
+            transform: scale(1);
+            display: block;
+        }
+        .hide:hover {
+            background: none;
+            transform: scale(1.3);
+        }
+
+        &-icons {
+            font-size: 1.2rem;
+        }
+        &-btn-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}

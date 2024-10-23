@@ -1,0 +1,467 @@
+::-webkit-scrollbar {
+    width: 1rem;
+    background: $tertiary;
+}
+::-webkit-scrollbar-thumb {
+    background: $secondary;
+}
+
+// HEADER
+.header-content {
+    background: linear-gradient(#3b3b3b91, #141515cf), url('../../public/images/dr-paysage.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    min-height: 90vh;
+    display: flex;
+
+    &-left {
+        flex: 1;
+    }
+    &-right {
+        flex: 1;
+        position: relative;
+        
+        &-content {
+            background: #07080852;
+            padding: 1rem 2rem;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: 1px solid $secondary;
+        }
+        &-title {
+            font-family: 'montserrat';
+            color: $secondary;
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
+        &-line {
+            width: 40px;
+            border: 1px solid $tertiary;
+        }
+        &-para {
+            color: $tertiary;
+        }
+        &-subtitle {
+            color: $tertiary;
+        }
+    }
+
+    &-title {
+        color: $tertiary;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        &-style {
+            font-family: 'platypi';
+            text-decoration: underline $secondary;
+        }
+    }
+    &-para {
+        color: $tertiary;
+        margin: 2rem 0;
+    }
+}
+// HEADER
+
+// CONNEXION
+.connexion {
+    background: url('../../public/images/bg-connexion.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 4rem;
+
+    .subtitle {
+        text-align: center;
+    }
+
+    &-form {
+        background: #f2f6f7;
+        right: 4rem;
+        top: 2rem;
+        width: 60%;
+        margin: auto;
+        
+        &-content {
+            margin: auto;
+            width: 60%;
+            position: relative;
+            box-shadow: 0px 0px 10px 0px #088a86;
+        }
+    }
+    &-left {
+        padding: 2rem;
+    }
+    &-btn-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    &-right {
+        flex: 1;
+        height: 100%;
+        position: relative;
+    }
+    &-right-img {
+        width: 100%;
+        height: 100%;
+    }
+    &-para {
+        font-size: .8rem;
+    }
+    &-subtitle {
+        color: $tertiary;
+        background: #0230428c;
+        padding: 1rem 0;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        font-size: 1rem;
+        width: 100%;
+    }
+    &-link {
+        // position: absolute; 
+        bottom: 1rem;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    &-input-icon {
+        color: $primary;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        cursor: pointer;
+    }
+    #show-psd {
+        display: none;
+    }
+}
+// CONNEXION
+
+.close {
+    font-size: 2rem;
+    color: $primary;
+    position: absolute;
+    top: .5rem;
+    right: .7rem;
+    cursor: pointer;
+    border: none;
+    padding: .3rem .8rem;
+    transition: .3s;
+    z-index: 1;
+}
+
+// ABOUT
+.about {
+    padding: 4rem;
+    
+    &-content {
+        display: flex;
+        padding: 2rem 0;
+    }
+    &-contact {
+        flex: 1;
+
+        &-icon {
+            font-size: 2rem;
+            color: $secondary;
+            padding: .5rem 1rem;
+            border-radius: .5rem;
+            transition: .3s;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            gap: 1rem;  
+        }
+        &-link {
+            color: black;
+        }
+    }
+    &-social-media {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .fb, .insta {
+        color: $secondary;
+    }
+    &-service {
+        flex: 1;
+
+        &-item {
+            margin: 1rem 0;
+
+            &-title {
+                position: relative;
+                background: $tertiary;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+                border: none;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: .3s;
+
+                &-btn {
+                    position: absolute;
+                    right: 1.5rem;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+            }
+            &-icon {
+                font-size: 1.5rem;
+                background: $secondary;
+                color: $tertiary;
+                padding: .7rem .8rem;
+            }
+            &-para {
+                padding-left: 3rem;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .3s ease-out;
+            }
+        }
+        &-link {
+            float: left;
+        }
+    }
+    &-subtitle {
+        margin-bottom: 1rem;
+    }
+}
+// ABOUT
+
+// TEAM
+.equipe {
+    background: $tertiary;
+    padding: 6rem 4rem;
+    text-align: center;
+
+    &-card {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 2rem 0;
+
+        &-item {
+            flex: 1;
+            position: relative;
+            height: 30vw;
+            transition: .3s;
+            overflow: hidden; 
+        }
+        &-item:hover {
+            box-shadow: 0px 5px 8px #8c8c8c;
+        }
+        &-item:hover &-desc-content {
+            opacity: 1;
+            transform: translateY(0);
+            height: 100%;
+        }
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+        &-desc {
+            padding: 1rem 0;
+            background: #00424086;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+
+            &-content {
+                text-align: start;
+                color: $tertiary;
+                background: #0169664f;
+                padding: 1rem .5rem;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                opacity: 0;
+                transform: translateY(-10px);
+                height: 0;
+                transition: .3s;
+            }
+            &-icon {
+                font-size: 2rem;
+                color: $tertiary;
+                transition: .3s;
+                margin: .5rem;
+            }
+            &-icon-content {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 100%;
+                top: 40%;
+                left: 0;
+            }
+            &-btn {
+                margin-top: 2rem;
+                text-align: center;
+            }
+        }
+        &-name {
+            color: $tertiary;
+            font-size: 1rem;
+        }
+        &-post {
+            color: $tertiary;
+            text-transform: uppercase;
+        }
+    }
+}
+// TEAM
+
+// APPOINTMENT
+.appointment {
+    &-form-content {
+        background: url('../../public/images/bg-connexion.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 4rem;
+    }
+    &-form {
+        padding: 2rem;
+        background: $tertiary;
+        width: 80%;
+        margin: auto;
+    }
+    &-title {
+        text-align: center;
+    }
+    &-para {
+        text-align: center;
+    }
+    .input-date-content {
+        display: flex;
+        gap: 2rem;
+    }
+}
+// APPOINTMENT
+
+// ACTUALITY
+.actuality {
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+
+    &-para {
+        margin-bottom: 2rem;
+    }
+    &-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        height: 60vh;
+        margin: auto;
+
+        &-item {
+            position: relative;
+            flex: 1;
+            // height: 100%; 
+            aspect-ratio: 3/4;
+            transition: .2s;
+
+            .actuality-card-item:hover &-desc {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .actuality-card-item:hover &-img{
+                transform: rotateY(0);
+            }
+
+            &-title {
+                font-weight: bold;
+            }
+            &-img {
+                width: 100%;
+                height: 100%;
+                transform: rotateY(160deg);
+                transition: .6s;
+            }
+            &-desc {
+                position: absolute;
+                width: 100%;
+                background: linear-gradient(#f2f6f703, #023042b8, #023042cf);
+                bottom: 0;
+                left: 0;
+                color: $tertiary;
+                padding: .3rem .5rem;
+                text-align: start;
+                transition: .5s ease-out;
+                transform: translateY(20px);
+                opacity: 0;
+            }
+        }
+    }
+}
+// ACTUALITY
+
+// FOOTER
+.footer {
+    display: flex;
+    padding: 4rem;
+    background: $primary;
+    position: relative;
+
+    &-logo {
+        color: $tertiary;
+    }
+    &-desc {
+        flex: 1;
+    }
+    &-para {
+        margin: 1rem 0;
+        color: $tertiary;
+    }
+    &-desc-social-media {
+        display: flex;
+        
+        &-link {
+            padding: 1rem 1.5rem;
+            font-size: 2rem;
+            color: $tertiary;
+            transition: .3s;
+        }
+    }
+
+    &-nav {
+        flex: 1;
+
+        &-list {
+            padding: 1rem 0;
+        }
+        &-item {
+            padding: .4rem;
+        }
+        &-link {
+            color: $tertiary;
+            padding: .3rem;
+        }
+    }
+    &-para-bottom-content {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        bottom: 1rem;
+    }
+    &-para-bottom {
+        color: $tertiary;
+        font-size: .8rem;
+    }
+}
+// FOOTER

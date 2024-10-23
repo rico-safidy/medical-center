@@ -1,0 +1,308 @@
+.dashboard {
+    padding: 0 4rem;
+    display: flex;
+    gap: 2rem;
+
+    .dash-header {
+        flex: 2;
+        padding: 2rem 0;
+    }
+    .dash-left-nav {
+        padding: 2rem 1rem;
+        max-width: 250px;
+        background: $tertiary;
+        height: auto;
+        transition: .3s;
+
+        &-btn {
+            font-size: 2rem;
+            color: $primary;
+            position: absolute;
+            right: 1.5rem;
+            top: 1rem;
+            display: none;
+            cursor: pointer;
+        }
+        &-link {
+            color: $primary;
+            font-size: 1.5rem;
+        }
+        &-profile {
+            &-img {
+                width: 100%;
+                aspect-ratio: 2 / 2;
+                border-radius: 50%;
+                border: 4px solid $secondary;
+                padding: .3rem;
+                margin-top: .5rem;
+            }
+            &-name {
+                text-align: center;
+            }
+            &-role {
+                text-align: center;
+            }
+        }
+        &-menu {
+            margin-top: 2rem;
+
+            &-text {
+                font-size: 1rem;
+            }
+            &-link {
+                color: $primary;
+                padding: .5rem;
+                transition: .3s;
+                width: 100%;
+                display: inline-block;
+                position: relative;
+
+                &-btn {
+                    text-align: start;
+                }
+            }
+            &-icon {
+                font-size: 1.5rem;
+            }
+            &-arrow {
+                position: absolute;
+                right: 1rem;
+                top: .9rem;
+                transition: .4s;
+            }
+        }
+        &-dropdown {
+            display: none;
+        }
+        .show {
+            display: block; 
+        }
+        .dash-dropdown-item {
+            padding-left: 2rem;
+        }
+    }
+
+    .dash-nav {
+        background: $tertiary;
+        padding: 1rem;
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-btn {
+                font-size: 2rem;
+                color: $primary;
+                cursor: pointer;
+                display: none;
+            }
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        &-icon {
+            font-size: 1.5rem;
+            color: $primary;
+        }
+        &-search {
+            position: relative;
+
+            &-icon {
+                position: absolute;
+                top: .5rem;
+                left: .7rem;
+                color: $primary;
+            }
+            &-input {
+                padding: .5rem 2.3rem;
+                color: $primary;
+                font-size: 1rem;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+    .dash-stat-card {
+        padding: 1rem 0;
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        &-item {
+            background: $tertiary;
+            padding: 1rem;
+            flex-grow: 1;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex: 1;
+        }
+        &-icon {
+            font-size: 3rem;
+            color: $secondary;
+            border: 3px solid $secondary; 
+            width: 5rem;
+            height: 5rem;
+            text-align: center;
+            padding: .3rem;
+        }
+        &-title {
+            font-weight: bold;
+        }
+        &-subtitle {
+            padding: .5rem 0;
+        }
+        &-para {
+            font-size: .8rem;
+        }
+    }
+
+    .dash-rdv {
+        display: flex;
+        gap: 1rem;
+        position: relative;
+
+        &-now {
+            background: $tertiary;
+            padding: 1rem;
+            flex: 1;
+
+            &-link {
+                color: $tertiary;
+                background: $primary;
+                padding: .5rem 1rem;
+                transition: .3s;
+                position: absolute;
+                bottom: .5rem;
+                left: .5rem;
+            }
+        }
+        
+        &-title-list {
+            display: flex;
+            align-items: center;
+        }
+        &-title-item {
+            flex: 1;
+            padding: .5rem 0;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+
+            &-content {
+                height: 230px;
+                overflow-y: auto;
+            }
+        }
+        &-item {
+            flex: 1;
+        }
+        &-img {
+            width: 50px;
+            aspect-ratio: 2 / 2;
+            border-radius: 50%;
+        }
+        &-hour {
+            font-weight: bold;
+        }
+
+        &-request {
+            flex: 1;
+            background: $tertiary;
+            padding: 1rem;
+            position: relative;
+        }
+        &-btns {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        &-btn {
+            border: none;
+            padding: .3rem .5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: .5rem;
+            transition: .3s;
+
+            &-ok {
+                background: #3e9e63;
+                color: $tertiary;
+            }
+            &-no {
+                background: #c23c3c;
+                color: $tertiary;
+            }
+        }
+    }
+}
+
+.user {
+    background: $tertiary;
+    padding: 1rem;
+
+    &-table {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        border: 1px solid $secondary;
+
+        &-list {
+            // height: 280px; 
+            overflow: auto;
+        }
+        &-img {
+            width: 50px;
+            aspect-ratio: 2/2;
+            border-radius: 50%;
+            border: .1rem solid $secondary;
+            padding: .1rem;
+        }
+        &-row-head {
+            background: $secondary;
+            color: $tertiary;
+        }
+        &-row-head th {
+            padding: .8rem .5rem;
+        }
+        &-row-def td {
+            padding: .2rem .5rem;
+        }
+        &-row-def:nth-child(odd) {
+            background: white;
+        }
+    }
+
+}
+
+.service {
+    &-table {
+        &-img {
+            width: 80px;
+            aspect-ratio: 2/2;
+            border: .1rem solid $secondary;
+            padding: .2rem;
+        }
+    }
+}
+
+.add-service {
+    background: $tertiary;
+    padding: 1rem 2rem;
+
+    &-title {
+        margin-bottom: 1rem;
+    }
+    &-form {
+        // width: 70%;
+        margin: auto;
+    }
+}
