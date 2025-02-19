@@ -28,7 +28,9 @@ $teams = list_team();
             <?php } elseif (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') { ?>
                 <a href="../security/deconnexion.php" class="btn btn-secondary">Deconnexion</a>
             <?php } else { ?>
-                <a href="connexion.php" class="btn btn-secondary" id="open-connexion-btn">Connexion</a>
+                <div class="header-content-container_btn">
+                    <a href="connexion.php" class="btn btn-secondary" id="open-connexion-btn">Connexion</a>
+                </div>
             <?php } ?>
 
         </div>
@@ -127,7 +129,9 @@ $teams = list_team();
 
         <?php foreach ($teams as $team) { ?>
             <div class="equipe-card-item">
-                <img src="../upload/<?= $team['profile'] ?>" alt="" class="equipe-card-img">
+                <div class="equipe-card-item-img_container">
+                    <img src="../upload/<?= $team['profile'] ?>" alt="" class="equipe-card-img">
+                </div>
                 <div class="equipe-card-desc">
                     <h2 class="subtitle equipe-card-name">Dr. <?= $team['name'] ?> <?= $team['lastname'] ?></h2>
                     <p class="para equipe-card-post mb-0"><?= $team['speciality'] ?></p>
@@ -207,7 +211,9 @@ $teams = list_team();
     <div class="actuality-card">
         <?php foreach ($actu as $item) { ?>
             <div class="actuality-card-item">
-                <img src="../upload/<?= $item['image'] ?>" class="actuality-card-item-img" alt="">
+                <div class="actuality-card-item-img_container">
+                    <img src="../upload/<?= $item['image'] ?>" class="actuality-card-item-img" alt="">
+                </div>
                 <div class="actuality-card-item-desc">
                     <h3 class="actuality-card-item-title"><?= $item['title'] ?></h6>
                         <p class="actuality-card-item-para"><?= $item['content'] ?></p>
