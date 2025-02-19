@@ -1,16 +1,16 @@
 
 @font-face {
     font-family: 'josefin';
-    src: url('/public/font/JosefinSans-VariableFont_wght.ttf');
+    src: url('../font/JosefinSans-VariableFont_wght.ttf');
 }
-// @font-face {
-//     font-family: 'montserrat';
-//     src: url('/public/font/Montserrat-VariableFont_wght.ttf');
-// }
-// @font-face {
-//     font-family: 'platypi';
-//     src: url('/public/font/Platypi-VariableFont_wght.ttf');
-// }
+@font-face {
+    font-family: 'montserrat';
+    src: url('../font/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'platypi';
+    src: url('../font/Platypi-VariableFont_wght.ttf');
+}
 
 $primary: #023042;
 $secondary: #088a86;
