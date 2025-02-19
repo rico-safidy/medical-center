@@ -1,3 +1,5 @@
+@use '../utils/variable';
+
 * {
     margin: 0;
     padding: 0;
@@ -19,19 +21,19 @@ a {
 
 .title {
     font-family: 'platypi';
-    color: $primary;
+    color: variable.$primary;
     font-size: 2.5rem;
 }
 .subtitle {
-    color: $primary;
+    color: variable.$primary;
 }
 .para {
-    color: $primary;
+    color: variable.$primary;
 }
 
 .line {
     width: 50px;
     margin: auto;
-    border: 1px solid $secondary;
+    border: 1px solid variable.$secondary;
     margin: .5rem auto;
 }

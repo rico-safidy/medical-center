@@ -1,3 +1,5 @@
+@use './variable';
+
 .btn {
     font-size: 1rem;
     font-family: 'montserrat';
@@ -9,19 +11,19 @@
 }
 .btn-primary {
     padding: 1rem 2rem; 
-    background: $primary;
+    background: variable.$primary;
     color: white;
     transition: .3s;
 }
 .btn-secondary {
     padding: 1rem 2rem;
-    background: $secondary;
+    background: variable.$secondary;
     color: white;
     transition: .3s;
 }
 .btn-tertiary {
     padding: 1rem 2rem;
-    background: $tertiary;
-    color: $primary;
+    background: variable.$tertiary;
+    color: variable.$primary;
     transition: .3s;
 }

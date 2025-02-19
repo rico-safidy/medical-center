@@ -1,8 +1,9 @@
+@use '../utils/variable';
 
 .nav {
     &-top-link:hover {
-        background: $tertiary;
-        color: $primary;
+        background: variable.$tertiary;
+        color: variable.$primary;
     }
     .active, &-navbar-link:hover {
         font-weight: bold;
@@ -12,7 +13,7 @@
 .btn {
     &-primary:hover {
         opacity: .9;
-        background: $primary;
+        background: variable.$primary;
     }
     &-secondary:hover {
         background: #05706d;
@@ -23,7 +24,7 @@
 }
 .close:hover {
     background: #e73535;
-    color: $tertiary;
+    color: variable.$tertiary;
 }
 
 .about {
@@ -35,11 +36,11 @@
 // ICON
 .fb:hover {
     background: #3131f1;
-    color: $tertiary;
+    color: variable.$tertiary;
 }
 .insta:hover {
     background: linear-gradient(45deg, #ff1c1c, #7c0fd6);
-    color: $tertiary;
+    color: variable.$tertiary;
 }
 
 .facebook:hover {
@@ -60,11 +61,11 @@
 }
 
 .dash-left-nav-menu-link:hover {
-    background: $primary;
-    color: $tertiary;
+    background: variable.$primary;
+    color: variable.$tertiary;
 }
 .dash-left-nav-menu-link:hover .dash-dropdown-item  {
-    color: $tertiary;
+    color: variable.$tertiary;
 }
 
 .input:focus {

@@ -1,9 +1,11 @@
+@use '../utils/variable';
+
 ::-webkit-scrollbar {
     width: 1rem;
-    background: $tertiary;
+    background: variable.$tertiary;
 }
 ::-webkit-scrollbar-thumb {
-    background: $secondary;
+    background: variable.$secondary;
 }
 
 // HEADER
@@ -28,37 +30,37 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            border: 1px solid $secondary;
+            border: 1px solid variable.$secondary;
         }
         &-title {
             font-family: 'montserrat';
-            color: $secondary;
+            color: variable.$secondary;
             font-size: 2rem;
             margin-bottom: .5rem;
         }
         &-line {
             width: 40px;
-            border: 1px solid $tertiary;
+            border: 1px solid variable.$tertiary;
         }
         &-para {
-            color: $tertiary;
+            color: variable.$tertiary;
         }
         &-subtitle {
-            color: $tertiary;
+            color: variable.$tertiary;
         }
     }
 
     &-title {
-        color: $tertiary;
+        color: variable.$tertiary;
         font-size: 2.5rem;
         margin-bottom: 1rem;
         &-style {
             font-family: 'platypi';
-            text-decoration: underline $secondary;
+            text-decoration: underline variable.$secondary;
         }
     }
     &-para {
-        color: $tertiary;
+        color: variable.$tertiary;
         margin: 2rem 0;
     }
 }
@@ -112,7 +114,7 @@
         font-size: .8rem;
     }
     &-subtitle {
-        color: $tertiary;
+        color: variable.$tertiary;
         background: #0230428c;
         padding: 1rem 0;
         text-align: center;
@@ -129,7 +131,7 @@
         text-align: center;
     }
     &-input-icon {
-        color: $primary;
+        color: variable.$primary;
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
@@ -143,7 +145,7 @@
 
 .close {
     font-size: 2rem;
-    color: $primary;
+    color: variable.$primary;
     position: absolute;
     top: .5rem;
     right: .7rem;
@@ -167,7 +169,7 @@
 
         &-icon {
             font-size: 2rem;
-            color: $secondary;
+            color: variable.$secondary;
             padding: .5rem 1rem;
             border-radius: .5rem;
             transition: .3s;
@@ -188,7 +190,7 @@
         gap: 1rem;
     }
     .fb, .insta {
-        color: $secondary;
+        color: variable.$secondary;
     }
     &-service {
         flex: 1;
@@ -198,7 +200,7 @@
 
             &-title {
                 position: relative;
-                background: $tertiary;
+                background: variable.$tertiary;
                 display: flex;
                 align-items: center;
                 gap: 1rem;
@@ -217,8 +219,8 @@
             }
             &-icon {
                 font-size: 1.5rem;
-                background: $secondary;
-                color: $tertiary;
+                background: variable.$secondary;
+                color: variable.$tertiary;
                 padding: .7rem .8rem;
             }
             &-para {
@@ -240,7 +242,7 @@
 
 // TEAM
 .equipe {
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: 6rem 4rem;
     text-align: center;
 
@@ -280,7 +282,7 @@
 
             &-content {
                 text-align: start;
-                color: $tertiary;
+                color: variable.$tertiary;
                 background: #0169664f;
                 padding: 1rem .5rem;
                 position: absolute;
@@ -293,7 +295,7 @@
             }
             &-icon {
                 font-size: 2rem;
-                color: $tertiary;
+                color: variable.$tertiary;
                 transition: .3s;
                 margin: .5rem;
             }
@@ -313,11 +315,11 @@
             }
         }
         &-name {
-            color: $tertiary;
+            color: variable.$tertiary;
             font-size: 1rem;
         }
         &-post {
-            color: $tertiary;
+            color: variable.$tertiary;
             text-transform: uppercase;
         }
     }
@@ -335,7 +337,7 @@
     }
     &-form {
         padding: 2rem;
-        background: $tertiary;
+        background: variable.$tertiary;
         width: 80%;
         margin: auto;
     }
@@ -398,7 +400,7 @@
                 background: linear-gradient(#f2f6f703, #023042b8, #023042cf);
                 bottom: 0;
                 left: 0;
-                color: $tertiary;
+                color: variable.$tertiary;
                 padding: .3rem .5rem;
                 text-align: start;
                 transition: .5s ease-out;
@@ -414,18 +416,18 @@
 .footer {
     display: flex;
     padding: 4rem;
-    background: $primary;
+    background: variable.$primary;
     position: relative;
 
     &-logo {
-        color: $tertiary;
+        color: variable.$tertiary;
     }
     &-desc {
         flex: 1;
     }
     &-para {
         margin: 1rem 0;
-        color: $tertiary;
+        color: variable.$tertiary;
     }
     &-desc-social-media {
         display: flex;
@@ -433,7 +435,7 @@
         &-link {
             padding: 1rem 1.5rem;
             font-size: 2rem;
-            color: $tertiary;
+            color: variable.$tertiary;
             transition: .3s;
         }
     }
@@ -448,7 +450,7 @@
             padding: .4rem;
         }
         &-link {
-            color: $tertiary;
+            color: variable.$tertiary;
             padding: .3rem;
         }
     }
@@ -460,7 +462,7 @@
         bottom: 1rem;
     }
     &-para-bottom {
-        color: $tertiary;
+        color: variable.$tertiary;
         font-size: .8rem;
     }
 }

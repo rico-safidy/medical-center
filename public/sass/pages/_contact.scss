@@ -1,13 +1,15 @@
+@use '../utils/variable';
+
 .contact {
     padding: 4rem;
 
     &-btn-content {
-       background: $tertiary;
+       background: variable.$tertiary;
        padding: 2rem;
     }
     &-subtitle {
         text-align: center;
-        color: $secondary;
+        color: variable.$secondary;
     }
     &-btn-list {
         display: flex;
@@ -18,8 +20,8 @@
     }
     &-btn-item {
         flex: 1;
-        background: $primary;
-        color: $tertiary;
+        background: variable.$primary;
+        color: variable.$tertiary;
         padding: 1rem;
         transform: translateY(4rem);
     }
@@ -27,7 +29,7 @@
         font-size: 2rem;
     }
     &-btn-title {
-        color: $secondary;
+        color: variable.$secondary;
     }
     &-btn-link {
         font-size: .8rem;
@@ -45,7 +47,7 @@
             }
             &-icon-link {
                 font-size: 2rem;
-                color: $primary;
+                color: variable.$primary;
                 padding: .5rem 1rem;
                 border-radius: .5rem;
                 transition: .3s;
@@ -79,16 +81,16 @@
     }
     &-label {
         font-weight: bold;
-        color: $primary;
+        color: variable.$primary;
         padding: 1rem 0;
     }
     &-input {
         border: none;
-        border-bottom: 2px solid $primary;
+        border-bottom: 2px solid variable.$primary;
         padding: .2rem 0;
         font-size: 1rem;
         outline: none;
-        color: $primary;
+        color: variable.$primary;
         width: 100%;
 
         &-btn {

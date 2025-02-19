@@ -1,3 +1,5 @@
+@use '../utils/variable';
+
 .profile {
     padding: 4rem;
     display: flex;
@@ -11,7 +13,7 @@
         
     }
     &-desc {
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: 2rem;
     }
     &-para {

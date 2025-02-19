@@ -1,3 +1,5 @@
+@use '../utils/variable';
+
 .input {
     font-size: 1rem;
     border: 1px solid #d1d1d1;
@@ -7,27 +9,26 @@
     width: 100%;
     margin: .5rem 0;
     padding: 1rem 3rem;
-    color: $primary;
+    color: variable.$primary;
     
     &-content {
         position: relative;
-        // margin: 1rem 0; 
         flex: 1;
     }
     &-label {
         position: absolute;
         left: 1rem;
         top: -.2rem;
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: 0 .5rem;
-        color: $primary;
+        color: variable.$primary;
         font-weight: bold;
     }
     &-icon {
         position: absolute;
         left: 1rem;
         top: 1.4rem;
-        color: $primary;
+        color: variable.$primary;
         font-size: 1.3rem;
     }
 }

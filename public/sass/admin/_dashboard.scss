@@ -1,3 +1,5 @@
+@use '../utils/variable';
+
 .dashboard {
     padding: 0 4rem;
     display: flex;
@@ -10,13 +12,13 @@
     .dash-left-nav {
         padding: 2rem 1rem;
         max-width: 250px;
-        background: $tertiary;
+        background: variable.$tertiary;
         height: auto;
         transition: .3s;
 
         &-btn {
             font-size: 2rem;
-            color: $primary;
+            color: variable.$primary;
             position: absolute;
             right: 1.5rem;
             top: 1rem;
@@ -24,7 +26,7 @@
             cursor: pointer;
         }
         &-link {
-            color: $primary;
+            color: variable.$primary;
             font-size: 1.5rem;
         }
         &-profile {
@@ -32,7 +34,7 @@
                 width: 100%;
                 aspect-ratio: 2 / 2;
                 border-radius: 50%;
-                border: 4px solid $secondary;
+                border: 4px solid variable.$secondary;
                 padding: .3rem;
                 margin-top: .5rem;
             }
@@ -50,7 +52,7 @@
                 font-size: 1rem;
             }
             &-link {
-                color: $primary;
+                color: variable.$primary;
                 padding: .5rem;
                 transition: .3s;
                 width: 100%;
@@ -83,7 +85,7 @@
     }
 
     .dash-nav {
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: 1rem;
 
         &-list {
@@ -93,7 +95,7 @@
 
             &-btn {
                 font-size: 2rem;
-                color: $primary;
+                color: variable.$primary;
                 cursor: pointer;
                 display: none;
             }
@@ -105,7 +107,7 @@
         }
         &-icon {
             font-size: 1.5rem;
-            color: $primary;
+            color: variable.$primary;
         }
         &-search {
             position: relative;
@@ -114,11 +116,11 @@
                 position: absolute;
                 top: .5rem;
                 left: .7rem;
-                color: $primary;
+                color: variable.$primary;
             }
             &-input {
                 padding: .5rem 2.3rem;
-                color: $primary;
+                color: variable.$primary;
                 font-size: 1rem;
                 outline: none;
                 border: none;
@@ -135,7 +137,7 @@
             gap: 1rem;
         }
         &-item {
-            background: $tertiary;
+            background: variable.$tertiary;
             padding: 1rem;
             flex-grow: 1;
             display: flex;
@@ -145,8 +147,8 @@
         }
         &-icon {
             font-size: 3rem;
-            color: $secondary;
-            border: 3px solid $secondary; 
+            color: variable.$secondary;
+            border: 3px solid variable.$secondary; 
             width: 5rem;
             height: 5rem;
             text-align: center;
@@ -169,13 +171,13 @@
         position: relative;
 
         &-now {
-            background: $tertiary;
+            background: variable.$tertiary;
             padding: 1rem;
             flex: 1;
 
             &-link {
-                color: $tertiary;
-                background: $primary;
+                color: variable.$tertiary;
+                background: variable.$primary;
                 padding: .5rem 1rem;
                 transition: .3s;
                 position: absolute;
@@ -216,7 +218,7 @@
 
         &-request {
             flex: 1;
-            background: $tertiary;
+            background: variable.$tertiary;
             padding: 1rem;
             position: relative;
         }
@@ -235,40 +237,39 @@
 
             &-ok {
                 background: #3e9e63;
-                color: $tertiary;
+                color: variable.$tertiary;
             }
             &-no {
                 background: #c23c3c;
-                color: $tertiary;
+                color: variable.$tertiary;
             }
         }
     }
 }
 
 .user {
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: 1rem;
 
     &-table {
         width: 100%;
         text-align: left;
         border-collapse: collapse;
-        border: 1px solid $secondary;
+        border: 1px solid variable.$secondary;
 
         &-list {
-            // height: 280px; 
             overflow: auto;
         }
         &-img {
             width: 50px;
             aspect-ratio: 2/2;
             border-radius: 50%;
-            border: .1rem solid $secondary;
+            border: .1rem solid variable.$secondary;
             padding: .1rem;
         }
         &-row-head {
-            background: $secondary;
-            color: $tertiary;
+            background: variable.$secondary;
+            color: variable.$tertiary;
         }
         &-row-head th {
             padding: .8rem .5rem;
@@ -288,21 +289,20 @@
         &-img {
             width: 80px;
             aspect-ratio: 2/2;
-            border: .1rem solid $secondary;
+            border: .1rem solid variable.$secondary;
             padding: .2rem;
         }
     }
 }
 
 .add-service {
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: 1rem 2rem;
 
     &-title {
         margin-bottom: 1rem;
     }
     &-form {
-        // width: 70%;
         margin: auto;
     }
 }

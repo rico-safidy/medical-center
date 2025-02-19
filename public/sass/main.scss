@@ -1,21 +1,21 @@
 
-@import 'utils/variable';
-@import 'utils/mixin';
-@import 'utils/btn';
-@import 'utils/nav';
+@use 'utils/variable';
+@use 'utils/mixin';
+@use 'utils/btn';
+@use 'utils/nav';
 
-@import 'mediaQuery/max';
-@import 'mediaQuery/min';
+@use 'mediaQuery/max';
+@use 'mediaQuery/min';
 
-@import 'base/base';
-@import 'base/input';
+@use 'base/base';
+@use 'base/input';
 
-@import 'pages/acceuil';
-@import 'pages/service';
-@import 'pages/contact';
-@import 'pages/profile';
+@use 'pages/acceuil';
+@use 'pages/service';
+@use 'pages/contact';
+@use 'pages/profile';
 
-@import 'admin/dashboard';
+@use 'admin/dashboard';
 
-@import 'animation/animation';
-@import 'animation/hover';
+@use 'animation/animation';
+@use 'animation/hover';
